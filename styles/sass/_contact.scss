@@ -1,0 +1,103 @@
+// _______________contact_______________________
+
+.get-in-touch-header {
+    background: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 65%;
+    h1 {
+        margin-top: 10%;
+        color: white;
+    }
+}
+
+.contact {
+    background-color: $fourth-color;
+}
+
+.contact-container {
+    display: flex;
+    margin-bottom: -3%;
+}
+
+.contact-box1 {
+    width: 30%;
+}
+
+.contact-box2{
+    width: 70%;
+    .form-blog {
+        background-color: $secondary-color;
+        padding: 4rem 2rem;
+        width: 90%;
+        box-shadow: $third-color 25px 25px;
+        position: relative;
+        bottom: 30%;
+        input[type="text"],input[type="email"] {
+            padding-left: 1rem;
+            color: white;
+        }
+        textarea {
+            color: white;
+        }
+        input::placeholder {
+            color: white;
+            opacity: 1;
+        }
+        textarea::placeholder {
+            color: white;
+        }
+        input[type="submit"]{
+            background-color: $third-color;
+            color: $secondary-color;
+        }
+    }
+}
+.contact-box1{
+    padding: 5%;
+    p:first-of-type {
+        padding-bottom: 2rem;
+    }
+    div{
+        display: flex;
+        i {
+            padding: 0.50rem;
+            color: $secondary-color;
+        }
+    }
+}
+
+.contact-box1 a:hover {
+    border: 2px solid $third-color;
+    border-radius: 50px;
+}
+
+.contact-box1 a:focus {
+    border: 2px $secondary-color solid;
+}
+
+.contact-box1 a:focus {
+    border: 2px $third-color solid;
+}
+
+.contact-footer {
+    color: $secondary-color;
+}
+
+.contact {
+    input[type="text"]:focus,input[type="email"]:focus {
+        border-radius: 50px;
+        font-size: 1.5rem;
+        border: 2px red solid;
+    }
+    input[type="text"]:active,input[type="email"]:active {
+        border: 2px red solid;
+    }
+    textarea:focus {
+        font-size: 2rem;
+        border: 2px red solid;
+    }
+    textarea:active {
+        border: 2px red solid;
+    }
+}

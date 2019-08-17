@@ -1,0 +1,379 @@
+// media querys
+@media (max-width: 1800px) {
+    .header-boat figure {
+            top: 8rem;
+    }
+    .blog-header .header-container h1, .get-in-touch-header h1 {
+        padding-bottom:10%;
+        margin-bottom: 0; 
+    }
+}
+@media (max-width: 1400px) {
+    .header-boat figure {
+        top: 5rem;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1185px){
+    aside figure::after {
+        content: "";
+        height: 20%;
+    }
+    .header-container{
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .header-bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h1 {
+            align-self: flex-start;
+            margin-bottom: 0;
+        }
+        figure {
+            position: static;
+            width: 70%;
+        }
+    }
+    .header-boat {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .about .container-boxes .box {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .win-trip .container .win-box2 {
+        padding-left: 5%;
+    }
+    article {
+        position: static;
+        margin-bottom: 10%;
+    }
+    .blog-page .blog-container {
+        padding-top: 3%;
+    }
+    .blog-header .header-container h1 {
+        margin-bottom: 0;
+    }
+
+    .blog-header {
+        height: auto;;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 877px){
+
+    .index-header{
+        height: auto;
+    }
+
+    .header-container ul {
+        display: none;
+    }
+    .menu-icon {
+        display:flex;
+        justify-content: flex-end;
+        font-size: 2.5rem;
+        color: white;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    .header-bottom-container {
+        flex-direction: column;
+        h1 {
+            margin-top: 15%;
+            font-size: 55px;
+            width: 30%;
+            margin-bottom: 5%;
+        }
+        figure {
+            width: 70%;
+            position:static;
+        }
+    }
+    .header-boat {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .program .container .box {
+        width: 100%;
+    }
+
+    .program .container .box2 {
+        order: 5;
+        padding-top: 20%;
+    }
+    .win-trip {
+        .container {
+            justify-content: space-between;
+            flex-wrap:wrap;
+            .win-box1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-bottom: 5%;
+            }
+            .win-box2{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0%;
+            }
+        }
+
+    }
+    .gallery {
+        ul {
+            li {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+    .blog-container {
+        flex-wrap: wrap;
+        article {
+            position: static;
+            margin-bottom: 0;
+        }
+    }
+    
+    .blog-page .blog-container  aside {
+        width: 100%;
+        order:4;
+    }
+
+    .blog-container  aside figure::after {
+        display: none;
+    }
+
+    .blog-page .blog-container .article-container {
+        width: 100%;
+        margin-left: 1.5%;
+        margin-top: 10%;
+    }
+
+    .aside-text-container {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10%;
+        box-shadow: $third-color 15px -15px;
+        p {
+            margin-bottom: 5%;
+        }
+    }
+    aside{
+        display: flex;
+        align-items: center;
+        figure {
+            margin-top: 10%;
+            width: 60%;
+            margin-bottom: 10%;
+            box-shadow: $secondary-color 15px -15px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .blog-header {
+        height: 50vh;
+    }
+    .text-container .deep-text-container {
+        margin-left:0;
+    }
+
+    .get-in-touch-header {
+        height: 50vh;
+    }
+
+    .contact-container {
+        flex-wrap: wrap;
+        .contact-box1{
+            order: 3;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-box2 {
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .form-blog{
+                position: static;
+                margin-top: 10%;
+            }
+        }
+    }
+    .blog-header .header-container h1 {
+        margin-bottom: 0;
+    }
+
+    .get-in-touch-header h1 {
+        width: 60%;
+    }
+    .blog-header {
+        position: relative;
+    }
+    .form-blog .input-container {
+        flex-direction: column;
+    }
+    .form-blog .input-container input[type="text"], .form-blog .input-container input[type="email"] {
+        width: 97%;
+        margin-bottom: 3%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 580px) {
+    .header-bottom-container {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 60px;
+        padding-top: 1.5rem;
+    }
+    .header-boat {
+        align-items: center;
+    }
+    .index-header, .get-in-touch-header {
+        height: auto;
+    }
+    .get-in-touch-header h1 {
+        margin-bottom: 0;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+    .about .container-boxes .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .i-container i {
+        background: $third-color;
+        padding:30px;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        color:$secondary-color;
+        margin-left:15%;
+    }
+    .box-text h2, p {
+        text-align: center;
+    }
+    .program .box a, .win-trip .box a, .win-trip .box h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .blog-header {
+        height: auto;
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+    .text-container .deep-text-container{ 
+        h2 {
+            margin-bottom: 10%;
+        }
+        p {
+            line-height: 40px;
+            padding-bottom: 10%;
+        } 
+    }
+
+    .comments {
+        margin:0;
+        padding: 0;
+    }
+    box-text h2, p {
+        text-align: left;
+    }
+
+    .comments h3{
+        text-align: center;
+    }
+    .form-blog .input-container input[type="text"], .form-blog .input-container input[type="email"] {
+        padding: 1rem 1rem;
+    }
+
+    .form-blog .input-container input[type="email"]:placeholder-shown {
+        text-overflow: ellipsis;
+    }
+
+    .contact-box2 .form-blog {
+        width: 98%;
+        padding: 4rem 1rem;
+    }
+    .form-blog .input-container{
+        input[type="text"]:focus,input[type="email"]:focus {
+            font-size: 1rem;
+        }
+        input[type="text"]:active,input[type="email"]:active {
+            border: 0.25rem red solid;
+        }        
+    }
+    footer p {
+        text-align: center;
+    }
+
+    .comment-box .comment-text {
+        width: 70%;
+    }
+
+    .comment-box figure {
+        width: 30%;
+    }
+}
+/*Even smaller*/
+@media(max-width: 350px){
+    .header-bottom-container {
+        h1 {
+            font-size: 35px;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .program .container .box2 {
+        padding-top: 35%;
+    }
+    .contact-box2 .form-blog {
+        width: 100%;
+        padding: 4rem 0.5rem;
+        box-shadow: none;
+        border: $third-color solid 1px;
+    }
+
+    .get-in-touch-header h1 {
+        font-size: 43px;
+    }
+
+    .contact-box1 p {
+        text-align: center;
+    }
+    .get-in-touch-header h1 {
+        margin-left: 0;
+    }
+}
+
+@media (max-height: 850px) {
+    .blog-header,.get-in-touch-header, .index-header{
+        height: auto;
+    }
+    aside figure::after {
+        height: 20%;
+    }
+    .contact-box2 .form-blog {
+        bottom: 15%;
+    }
+
+}

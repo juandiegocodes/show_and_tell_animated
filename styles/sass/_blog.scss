@@ -1,0 +1,214 @@
+// ________________-blog.html starts___________
+
+// header
+
+.blog-header{
+    background: url(../assets/blog-header.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 65%;
+    .header-container {
+        justify-content: flex-start;
+        h1{
+            color: white;
+             margin-top: 8%;
+        }
+    }
+}
+
+// main section blog
+.blog-page{
+    background-color: $fourth-color;
+    .blog-container {
+        display: flex;
+        padding-top: 12.5%;
+        .article-container {
+            width: 60%;
+        }
+        aside {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside{
+    position: relative;
+    figure {
+        width: 82.5%;
+        img {
+            display: block;
+            height: 100%;
+            width: 93%;
+        }
+    }
+}
+
+aside figure::after {
+    content: "";
+    position: absolute;
+    width: 5.79%;
+    height: 30%;
+    left: 76.7%;
+    bottom:0;
+    top:13px;
+    right:0;
+    background-color: $secondary-color;
+}
+
+.aside-text-container {
+    background-color: $secondary-color;
+    padding: 3% 6% 3% 3%;
+    width: 65%;
+    h4 {
+        color:$third-color;
+        margin: 0;
+    }
+    p {
+        color: white;
+        margin-bottom: 14%;
+    }
+    ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    li {
+        color: white;
+        padding-bottom: 3%;
+    }
+}
+// article
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    bottom:13%;
+    margin-bottom: -20%;
+}
+
+.img-container{
+    box-shadow: inset 29px -13px $third-color;
+    width: 98%;
+    figure {
+        position: relative;
+        bottom:0.65rem;
+        left:2%;
+    }
+}
+.text-container {
+    box-shadow: inset 2px -2px 0px 2px $third-color;
+    .deep-text-container {
+        margin-left:5%;
+        padding-bottom: 9%;
+        padding-left: 5%;
+        padding-top: 3%; 
+        p {
+            padding-bottom: 3%;
+        }
+    }
+}
+
+.comments {
+    margin-left:5%;
+    padding-bottom: 9%;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        color: $secondary-color;
+        margin: 7% 0;
+    }
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15%;
+    figure {
+        width: 10%;
+    }
+    .comment-text {
+        width: 90%;
+        padding: 0 4%;
+        h5{
+            font-weight: bold;
+            color:$secondary-color;
+        }
+    }
+}
+
+// 
+
+.form-blog {
+    display: flex;
+    flex-direction: column;
+    .input-container {
+        display: flex;
+        input[type="text"],input[type="email"] {
+            background: none;
+            border: none;
+            width: 45%;
+            padding: 1rem;
+            padding-left: 2rem;
+            border-bottom: 2px solid $third-color;
+            margin-right: 5%
+        }
+        input::placeholder {
+            opacity: 1;
+        }
+    }
+}
+.blog-container {
+    input[type="text"]:focus,input[type="email"]:focus {
+        border-radius: 50px;
+        font-size: 1.5rem;
+        background-color:$third-color;
+    }
+    input[type="text"]:active,input[type="email"]:active {
+        border: 2px red solid;
+        background-color: $third-color;
+    }
+    textarea:focus {
+        font-size: 2rem;
+        background-color: $third-color;
+    }
+    textarea:active {
+        border: 2px red solid;
+        background-color: $third-color;
+    }
+}
+
+.text-area-container {
+    margin-right: 5%;
+    margin-top: 5%;
+    textarea{
+        width: 100%;
+        background: none;
+        border: 2px $third-color solid;
+        padding: 2rem;
+        resize: none;
+    }
+    textarea::placeholder {
+        opacity: 1;
+    }
+}
+
+input[type="submit"] {
+    width: 95%;
+    background: $secondary-color;
+    color: $third-color;
+    margin-bottom: 4%;
+}
+
+input[type="submit"]:active {
+    background-color: #022636;
+}

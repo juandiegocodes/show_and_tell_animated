@@ -1,0 +1,192 @@
+// _________index.html starts here_______________________
+
+// Header
+
+.index-header {
+    background: url(../assets/home-header.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 65%;
+}
+
+.header-container{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    ul {
+        display: flex;
+        margin-left:7.5%;
+        a {
+            display: block;
+            padding: 1rem;
+        }
+        li{
+            position: relative;
+        }
+        a:hover::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 5px;
+            position: absolute;
+            margin-left:-9%;
+            bottom: 20%;
+            background: $third-color;
+            border-radius: 50px;
+        }  
+        a:focus {
+            border: 2px solid $third-color;
+        }
+        a:active {
+            border: 2px solid$third-color;
+        }     
+    }
+}
+
+.header-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    figure {
+        position: relative;
+        top: 5rem;
+    }
+}
+
+
+// about section
+
+.about {
+    background-color: $fourth-color;
+    .container-boxes{
+        padding-top: 15%;
+        padding-bottom: 13%;
+        flex-wrap: wrap;
+        .box{
+            width: 50%;
+        }
+    }
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-container {
+    padding-top: 1rem;
+    margin-right: 1rem;
+}
+
+.i-container i {
+    background: $third-color;
+    padding:15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color:$secondary-color;
+}
+
+// program section
+
+.program {
+    background-color: $secondary-color;
+    padding-bottom: 2rem;
+    .container{
+        flex-wrap: wrap;
+        .box {
+            width: 50%;
+            color: white;
+        }
+    }
+}
+.figure1{
+    box-shadow: $third-color 15px 15px;
+    position: relative;
+    right:9%;
+    bottom: 1rem;
+    img {
+        height: 100%;
+    }
+}
+.figure2{
+    box-shadow: $third-color -15px 15px;
+    position: relative;
+    left:9%;
+    top:3rem;
+    img {
+        height:100%;
+    }
+}
+
+.box1 {
+    padding-left: 8%;
+    padding-top: 2.5rem;
+}
+
+.box2 {
+    padding-right: 8%;
+    padding-top: 2.5rem;
+    text-align: right;
+    p {
+        text-align: left;
+    }
+}
+
+// extra vacations days?
+
+.extra-days{
+    background-color: $fourth-color;
+    padding: 7% 4%;
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+} 
+
+// win-trip
+
+.win-trip {
+    background-color: $fourth-color;
+    padding: 7% 4%;
+    .container {
+        justify-content: space-between;
+        .win-box1 {
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+        .win-box2{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.win-trip figure{
+    box-shadow: $third-color -15px 15px;
+}
+
+// gallery
+
+.gallery {
+    background-color: $secondary-color;
+    padding: 7% 4%;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 32%;
+        }
+    }
+}
+
+//  footer
+footer {
+    background-color: $third-color;
+    text-align: center;
+    padding: 1% 0;
+}
+
+// ________________________Index.html finish_______________

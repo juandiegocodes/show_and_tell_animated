@@ -1,0 +1,148 @@
+// general style
+
+html {
+    font-size: 125%;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-color;
+}
+
+nav {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 29px;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    background-position-x: 65%;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+}
+
+.yellow-button {
+    padding: 0.5rem 1rem;
+    background-color: $third-color;
+    text-transform: uppercase;
+    color: $secondary-color;
+    display: inline-block;
+    margin-top:2rem;
+}
+
+.yellow-button:hover {
+    border: 3px white solid;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.yellow-button:active {
+    background-color: #e2c313;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transition: all 0.5s;
+}
+
+.yellow-button:focus {
+    border: 2px red solid;
+    transition: all 0.5s;
+}
+
+h1,h2,h3,h4,.yellow-button{
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 79px;
+    color: $third-color;
+    width: 50%;
+    margin: 0 0 4% 7.5%;
+}
+
+h2 {
+    margin:0;
+    font-size: 45px;
+    line-height: 99.8px;
+    color: $secondary-color;
+}
+
+h3{
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1.3px;
+    line-height: 58px;
+}
+
+h4{
+    font-size: 25px;
+    line-height: 58px;
+    font-style: italic;
+    letter-spacing: 0.8px;
+}
+
+h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin:0.25rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin:0;
+}
+
+footer p {
+    color: $secondary-color;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+  }
+  
+  .skip-link:focus {
+    left: 50%;
+  }
